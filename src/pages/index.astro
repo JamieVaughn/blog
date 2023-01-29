@@ -1,0 +1,335 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import HeroSVG from '~/components/blog/HeroSVG.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    callToAction2={{ text: 'All Posts →', href: '/blog' /*icon: 'tabler:arrow-big-right-filled'*/ }}
+    callToAction={{ text: 'Featured Post', href: '#featured' }}
+  >
+    <!-- image={{ src: import('~/assets/svg/grow.svg'), alt: 'Growing developers' }} -->
+    <Fragment slot="title">
+      Sharing observations <br />about the web platform
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">Make Devs</span> is a blog that covers thoughts, observations and code snippets from
+        my web development career.
+      </span>
+    </Fragment>
+  </Hero>
+  <!-- <img style="margin: 0 auto" src="/src/assets/svg/grow-blue.svg" alt="Growing developers" /> -->
+  <HeroSVG />
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- Features Widget *************** -->
+  <!-- 
+  <Features
+    highlight="Features"
+    title="What you get with AstroWind"
+    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    items={[
+      [
+        {
+          title: 'Astro + Tailwind CSS Integration',
+          description:
+            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          icon: 'tabler:brand-tailwind',
+        },
+        {
+          title: 'Ready-to-use Components',
+          description:
+            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          icon: 'tabler:components',
+        },
+        {
+          title: 'Best Practices',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+          icon: 'tabler:list-check',
+        },
+      ],
+      [
+        {
+          title: 'Excellent Page Speed',
+          description:
+            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          icon: 'tabler:rocket',
+        },
+        {
+          title: 'Search Engine Optimization (SEO)',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+          icon: 'tabler:arrows-right-left',
+        },
+        {
+          title: 'Open to new ideas and contributions',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+          icon: 'tabler:bulb',
+        },
+      ],
+    ]}
+  /> -->
+
+  <!-- Content Widget **************** -->
+
+  <!-- <Content
+    highlight="Inside template"
+    title="And what's inside? ..."
+    items={[
+      {
+        title: 'Per ei quaeque sensibus',
+        description:
+          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+      },
+      {
+        title: 'Cu imperdiet posidonium sed',
+        description:
+          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+      },
+      {
+        title: 'Nulla omittam sadipscing mel ne',
+        description:
+          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/caos.jpg'),
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
+      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
+      tacimates.
+    </Fragment>
+  </Content> -->
+
+  <!-- Content Widget **************** -->
+
+  <!-- <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Per ei quaeque sensibus',
+      },
+      {
+        title: 'Cu imperdiet posidonium sed',
+      },
+      {
+        title: 'Nulla omittam sadipscing mel ne',
+      },
+      {
+        title: 'Per ei quaeque sensibus',
+      },
+      {
+        title: 'Cu imperdiet posidonium sed',
+      },
+      {
+        title: 'Nulla omittam sadipscing mel ne',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/vintage.jpg'),
+      alt: 'Vintage Image',
+    }}
+  /> -->
+
+  <!-- Steps Widget ****************** -->
+
+  <!-- <Steps
+    title="Get your dream website up and running in no time with AstroWind."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Download</span>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Add content</em>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/creativity.jpg'),
+      alt: 'Steps image',
+    }}
+  /> -->
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Covered Here"
+    subtitle="Sharing observations about the web platform"
+    highlight="Topics"
+    items={[
+      {
+        title: 'HTML',
+        description: 'Latest specification changes',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'CSS',
+        description: 'The best, most clever css techniques',
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Javascript',
+        description: 'The lingua franca of the web',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Applications',
+        description: 'Common use cases',
+        icon: 'icon-park:page-template',
+      },
+      {
+        title: 'Courses',
+        description: 'Courses that I offer',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Contact Me',
+        description:
+          'If you\'d like to work with me, let me know!',
+        icon: 'flat-color-icons:business-contact',
+      },
+    ]}
+  />
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <LatestPosts
+    title="Find more posts!"
+    information={`The archive of all posts written here is available here`}
+    postIds={[
+      'arity_polymorphism.md',
+      'chained_css.md',
+      'good_parts_crockford.md',
+      'good_parts_simpson.md',
+      'immutability.md',
+      'lists.md',
+      'lookup_tables.md',
+      'mixblend_mode.md',
+      'nothing_is_something.md',
+      'null_object_fp.md',
+      'nullish_checking_js.md',
+      'state_reducers.md',
+      'use_effect.md',
+      'uuids.md',
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <!-- <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
+    highlight="FAQs"
+    items={[
+      [
+        {
+          question: 'What do I need to start?',
+          answer:
+            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+        },
+        {
+          question: 'How to install the Astro + Tailwind CSS template?',
+          answer:
+            "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
+        },
+        {
+          question: "What's something that you don't understand?",
+          answer:
+            "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+        },
+      ],
+      [
+        {
+          question: "What's an example of when you changed your mind?",
+          answer:
+            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+        },
+        {
+          question: 'What is something that you would like to try again?',
+          answer:
+            "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+        },
+        {
+          question: 'If you could only ask one question to each person you meet, what would that question be?',
+          answer:
+            "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+        },
+      ],
+    ]}
+  /> -->
+
+  <!-- Stats Widget ****************** -->
+  <!-- 
+  <Stats
+    items={[
+      { name: 'Downloads', value: '132K' },
+      { name: 'Stars', value: '24.8K' },
+      { name: 'Forks', value: '10.3K' },
+      { name: 'Users', value: '48.4K' },
+    ]}
+  /> -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <!-- <CallToAction
+    callToAction={{
+      text: 'Get template',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:download',
+    }}
+  >
+    <Fragment slot="title">
+      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
+    </Fragment>
+  </CallToAction> -->
+</Layout>
