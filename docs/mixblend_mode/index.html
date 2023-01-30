@@ -12,7 +12,7 @@
 <meta property="og:description" content="CSS offers a nifty mix blend mode feature which can handle giving text a contrasting color based on the background color." />
 <meta property="og:url" content="https://wjv.io/blog/mixblend_mode" />
 <meta property="og:type" content="article" />
-<meta property="og:image" content="https://wjv.io/_astro/cover.4a2558fd.jpg" />
+<meta property="og:image" content="https://wjv.io/blog/_astro/cover.4a2558fd.jpg" />
 <meta property="og:image:alt" content="Using the CSS Mix Blend Mode for dark/light theme" />
 <link rel="canonical" href="https://wjv.io/blog/mixblend_mode" />
 
@@ -42,8 +42,8 @@
 <link rel="shortcut icon" href="/blog/favicon.ico">
 <link rel="icon" type="image/svg+xml" href="/blog/favicon.svg">
 <link rel="mask-icon" href="/blog/favicon.svg" color="#8D46E7">
-  <link rel="stylesheet" href="/_astro/privacy.2cca7713.css" />
-<link rel="stylesheet" href="/_astro/Logo.astro_astro_type_style_index_0_lang.3a0faaf0.css" /></head>
+  <link rel="stylesheet" href="/blog/_astro/privacy.3a778ac4.css" />
+<link rel="stylesheet" href="/blog/_astro/Logo.astro_astro_type_style_index_0_lang.3a0faaf0.css" /></head>
 
   <body class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark">
     
@@ -106,14 +106,108 @@
       </p>
 
       <picture>
-	<source type="image/avif" srcset="/_astro/cover.4a2558fd_Z15ITqB.avif 400w,/_astro/cover.4a2558fd_287NdC.avif 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/webp" srcset="/_astro/cover.4a2558fd_Zmo5sP.webp 400w,/_astro/cover.4a2558fd_Z2dIvCx.webp 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/jpeg" srcset="/_astro/cover.4a2558fd_ZbySKO.jpg 400w,/_astro/cover.4a2558fd_2cQWPN.jpg 900w" sizes="(max-width: 900px) 400px, 900px">
-	<img alt="CSS offers a nifty mix blend mode feature which can handle giving text a contrasting color based on the background color." src="/_astro/cover.4a2558fd_2cQWPN.jpg" loading="eager" decoding="async" alt="CSS offers a nifty mix blend mode feature which can handle giving text a contrasting color based on the background color." class="max-w-full lg:max-w-6xl mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700" width="900" height="506">
+	<source type="image/avif" srcset="/blog/_astro/cover.4a2558fd_20PcXv.avif 400w,/blog/_astro/cover.4a2558fd_9uLNN.avif 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/webp" srcset="/blog/_astro/cover.4a2558fd_Z2l16RE.webp 400w,/blog/_astro/cover.4a2558fd_RPALz.webp 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/jpeg" srcset="/blog/_astro/cover.4a2558fd_oyj81.jpg 400w,/blog/_astro/cover.4a2558fd_Z2hbX4i.jpg 900w" sizes="(max-width: 900px) 400px, 900px">
+	<img alt="CSS offers a nifty mix blend mode feature which can handle giving text a contrasting color based on the background color." src="/blog/_astro/cover.4a2558fd_Z2hbX4i.jpg" loading="eager" decoding="async" alt="CSS offers a nifty mix blend mode feature which can handle giving text a contrasting color based on the background color." class="max-w-full lg:max-w-6xl mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700" width="900" height="506">
 </picture>
     </header>
     <div class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8">
       <h2 id="first-lets-see-it-in-action">First, Let’s See It In Action!</h2>
-<p>Select colors</p>
-<mixblendmode></mixblendmode>
+<p>Play around with the background colors and images of the demonstration widget below and watch the text color seemlessly adapt. The inputs and toggles are not controlling the text color properties, they are only changing the background properties. CSS’s mixblend mode is set on the text to use the <code>difference</code> value, so that the text will always find a hue that is opposite the background hue.</p>
+<hr/>
+<h2>Demontration Widget: </h2>
+<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="ZlbTkT" data-solid-render-id="s0" component-url="/blog/_astro/mixblendmode.8012b078.js" component-export="MixBlendMode" renderer-url="/blog/_astro/client.f22d7483.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;MixBlendMode&quot;,&quot;value&quot;:true}" await-children=""><div id="mix-blend-mode"><label for="picker">Choose Background Color: </label><input id="picker" type="color"><br><label for="toggle">Toggle Background Color to White/Black: </label><input id="toggle" type="range" min="0" max="1" step="1"><br><label for="select-img">Choose Background Image: </label><select id="select-img" name="bg-image"><option disabled selected>Select Image</option><option value="https://images.unsplash.com/photo-1485949870685-e1d7ea5a1c53?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80">Stratospheric</option><option value="https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1052&amp;q=80">Celestial</option><option value="https://images.unsplash.com/photo-1604599340287-2042e85a3802?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80">Underwater</option><option value="https://images.unsplash.com/photo-1429734956993-8a9b0555e122?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1079&amp;q=80">Sunset</option><option value="https://images.unsplash.com/photo-1517913174253-45ab9b0f8b21?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1236&amp;q=80">Crosswalk</option><option value="https://images.unsplash.com/photo-1616067064617-31a11565509d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=934&amp;q=80">Oil Slick</option></select><br><br><header><h1>Hello<span>Mix Blend Mode!</span><svg viewBox="0 0 1000 80" xmlns="http://www.w3.org/2000/svg"><text x="25" y="50" fill="white" font-size="48px">Thanks CSS!</text></svg></h1></header><style>
+  #mix-blend-mode header {
+    background-color: indigo;
+    background-position: center bottom;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mix-blend-mode h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    mix-blend-mode: difference;
+  }
+
+  #mix-blend-mode h1 span {
+  /*   filter: grayscale(100%);   */
+  }
+
+
+  #mix-blend-mode input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 50px; /* Specific width is required for Firefox. */
+    height: 26px;
+    vertical-align: middle;
+    background: transparent;
+  }
+
+  #mix-blend-mode input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  #mix-blend-mode input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  /* Special styling for WebKit/Blink */
+  #mix-blend-mode input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #3071a9;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -1px;
+  }
+
+  /* All the same stuff for Firefox */
+  #mix-blend-mode input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #3071a9;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  #mix-blend-mode input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    background: #3071a9;
+    border-radius: 25px;
+    border: 1px solid royalblue;
+  }
+
+  #mix-blend-mode input[value="0"] {
+    background: royalblue;
+  }
+  #mix-blend-mode input[value="1"] {
+    background: cyan;
+  }
+
+  #mix-blend-mode input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+  /*   outline: 1px solid pink; */
+  }
+
+  #mix-blend-mode input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }</style></div></astro-island>
+<hr/>
+<p>This is an uncommon css property but it has so much potential! It should be used more often I think.</p>
+<p>An obvious use case is a way to make sure text has a high contrast for accessibility purposes no matter what background color is active. This could be paired with a light/dark mode toggle for easy adaptive, light/dark mode text.</p>
+<p>There’s plenty of other possibilities for <code>mix-blend-mode</code>, so go experiment with it yourself and see what you can discover!</p>
     </div>
     <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
       <ul class="mr-5">

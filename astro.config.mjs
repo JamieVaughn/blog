@@ -8,6 +8,7 @@ import sitemap from '@astrojs/sitemap';
 import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
+import solid from '@astrojs/solid-js'
 import compress from 'astro-compress';
 
 import { SITE } from './src/config.mjs';
@@ -35,6 +36,7 @@ export default defineConfig({
       serviceEntryPoint: '@astrojs/image/sharp',
     }),
     mdx(),
+    solid(),
 
     ...whenExternalScripts(() =>
       partytown({
