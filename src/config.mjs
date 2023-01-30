@@ -3,13 +3,13 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'Make 🏗️ Devs',
 
-  origin: 'https://astrowind.vercel.app',
-  basePathname: '/',
+  origin: 'https://wjv.io/',
+  basePathname: '/blog',
   trailingSlash: false,
 
   title: 'Astro Blog',
   description:
-    'Make Devs Blogs.',
+    'Make 🏗️ Devs Blog',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
