@@ -3,7 +3,7 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'Make 🏗️ Devs',
 
-  origin: 'https://wjv.io/',
+  origin: 'https://wjv.io',
   basePathname: '/blog',
   trailingSlash: false,
 
