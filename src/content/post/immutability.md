@@ -3,7 +3,7 @@ publishDate: 2020-12-21T12:35:07.322Z
 title: Javascript's Immutability Toolkit
 description: A conversation about methods native to Javascript that conserve immutability of data.
 excerpt: A conversation about methods native to Javascript that conserve immutability of data.
-image: ~/assets/images/cover.jpg
+image: /assets/images/cover.jpg
 category: Articles
 tags:
   - JavaScript

@@ -3,7 +3,7 @@ publishDate: 2022-02-11T11:25:07.322Z
 title: Nullish Checking in Javascript
 description: Null checks are a common need in programs and it's clunky to do them in Javascript, unless you use the "valueOf" trick
 excerpt: Null checks are a common need in programs and it's clunky to do them in Javascript, unless you use the "valueOf" trick
-image: ~/assets/images/cover.jpg
+image: /assets/images/cover.jpg
 category: Articles
 tags:
   - Javascript
