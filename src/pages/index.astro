@@ -25,23 +25,21 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction2={{ text: 'All Posts →', href: '/blog' /*icon: 'tabler:arrow-big-right-filled'*/ }}
-    callToAction={{ text: 'Featured Post', href: '#featured' }}
+    callToAction2={{ text: 'All Posts →', href: '/blog/blog' /*icon: 'tabler:arrow-big-right-filled'*/ }}
+    callToAction={{ text: 'Featured Post', href: '/blog/nullish_checking_js#featured' }}
   >
-    <!-- image={{ src: import('~/assets/svg/grow.svg'), alt: 'Growing developers' }} -->
-    <Fragment slot="title">
-      Sharing observations <br />about the web platform
-    </Fragment>
+    <Fragment slot="title">Make 🏗️ Devs</Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Make Devs</span> is a blog that covers thoughts, observations and code snippets from
-        my web development career.
+        Sharing observations & lessons about the <span class="font-semibold">web platform</span>.
       </span>
     </Fragment>
+    <Fragment slot="image">
+      <HeroSVG />
+    </Fragment>
   </Hero>
-  <!-- <img style="margin: 0 auto" src="/src/assets/svg/grow-blue.svg" alt="Growing developers" /> -->
-  <HeroSVG />
+
   <!-- Note Widget ******************* -->
 
   <Note />
@@ -229,8 +227,7 @@ const meta = {
       },
       {
         title: 'Contact Me',
-        description:
-          'If you\'d like to work with me, let me know!',
+        description: "If you'd like to work with me, let me know!",
         icon: 'flat-color-icons:business-contact',
       },
     ]}

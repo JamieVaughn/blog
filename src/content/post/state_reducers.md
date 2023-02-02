@@ -3,7 +3,7 @@ publishDate: 2019-12-28T20:47:18.322Z
 title: Simple State Reducer With Objects, Switch-Case & Generators
 description: Let's build a super simple State Reducer in three different ways
 excerpt: Let's build a super simple State Reducer in three different ways
-image: /assets/images/cover.jpg
+image: ~/assets/images/cover.jpg
 category: Articles
 tags:
   - JavaScript

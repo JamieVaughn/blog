@@ -3,7 +3,7 @@ publishDate: 2020-02-21T08:50:07.322Z
 title: The Null Object Pattern in the Functional Style
 description: Let's see how to create a Null Object pattern in Javascript
 excerpt: Let's see how to create a Null Object pattern in Javascript
-image: /assets/images/cover.jpg
+image: ~/assets/images/cover.jpg
 category: Articles
 tags:
   - Javascript

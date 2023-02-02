@@ -3,7 +3,7 @@ publishDate: 2021-01-22T05:35:07.322Z
 title: Variadic Functions in Javascript
 description: An example of variadic functions in JS
 excerpt: An example of variadic functions in JS
-image: /assets/images/cover.jpg
+image: ~/assets/images/cover.jpg
 category: Articles
 tags:
   - Functional

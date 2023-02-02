@@ -1,6 +1,7 @@
 # Todo list for this project
 
 - fix images for prod
+- add favicon
 - fix linkouts/linkbacks
 - Add compact all posts view like old blog had
 - border animation post

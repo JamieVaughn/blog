@@ -1,7 +1,7 @@
 ---
 import Grid from '~/components/blog/Grid.astro';
 
-import { getBlogPermalink } from '~/utils/permalinks';
+import { getPostsPermalink } from '~/utils/permalinks';
 import { findLatestPosts } from '~/utils/blog';
 
 export interface Props {
@@ -15,7 +15,7 @@ export interface Props {
 const {
   title = await Astro.slots.render('title'),
   allPostsText = 'View all posts',
-  allPostsLink = getBlogPermalink(),
+  allPostsLink = getPostsPermalink(),
   information = await Astro.slots.render('information'),
   count = 4,
 } = Astro.props;
