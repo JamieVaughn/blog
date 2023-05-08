@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon';
 import { Picture } from '@astrojs/image/components';
-
+import { SITE } from '~/config.mjs';
 interface CallToAction {
   text: string;
   href: string;
@@ -42,7 +42,9 @@ const {
         }
         <div class="max-w-3xl mx-auto lg:max-w-none">
           {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
-          <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-screen-xl">
+          <div
+            class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-screen-xl"
+          >
             {
               callToAction && (
                 <div class="flex w-full sm:w-auto">
@@ -84,7 +86,7 @@ const {
         {content && <Fragment set:html={content} />}
       </div>
       <div class="basis-1/2">
-        {
+        <!-- {
           image && (
             <div class="relative m-auto max-w-5xl">
               {typeof image === 'string' ? (
@@ -101,6 +103,21 @@ const {
                   {...image}
                 />
               )}
+            </div>
+          )
+        } -->
+        {
+          image ? (
+            <img
+              src={SITE.basePathname + image}
+              class="mx-auto rounded-md w-full"
+              sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+              {...image}
+              loading="lazy"
+            />
+          ) : (
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <div class="border-t dark:border-slate-700" />
             </div>
           )
         }

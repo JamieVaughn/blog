@@ -1,7 +1,7 @@
 ---
 import Icon from 'astro-icon';
 import { Picture } from '@astrojs/image/components';
-
+import { SITE } from '~/config.mjs';
 interface Item {
   title: string;
   description?: string;
@@ -82,7 +82,7 @@ const {
         }
       </div>
       <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
-        {
+        <!-- {
           image && (
             <div class="relative m-auto max-w-4xl">
               {typeof image === 'string' ? (
@@ -98,6 +98,21 @@ const {
                   {...image}
                 />
               )}
+            </div>
+          )
+        } -->
+        {
+          image ? (
+            <img
+              src={SITE.basePathname + image}
+              class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+              sizes="(max-width: 900px) 400px, 900px"
+              {...image}
+              loading="eager"
+            />
+          ) : (
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <div class="border-t dark:border-slate-700" />
             </div>
           )
         }

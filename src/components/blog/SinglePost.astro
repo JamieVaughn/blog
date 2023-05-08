@@ -1,7 +1,7 @@
 ---
 import Icon from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
-
+// import { Picture } from '@astrojs/image/components';
+import { SITE } from '~/config.mjs';
 import PostTags from '~/components/blog/Tags.astro';
 import SocialShare from '~/components/common/SocialShare.astro';
 
@@ -14,7 +14,7 @@ export interface Props {
   post: Post;
   url: string | URL;
 }
-
+console.log(Astro);
 const { post, url } = Astro.props;
 ---
 
@@ -49,7 +49,7 @@ const { post, url } = Astro.props;
         {post.excerpt}
       </p>
 
-      {
+      <!-- {
         post.image ? (
           <Picture
             src={post.image}
@@ -61,6 +61,21 @@ const { post, url } = Astro.props;
             aspectRatio={16 / 9}
             width={900}
             height={506}
+          />
+        ) : (
+          <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="border-t dark:border-slate-700" />
+          </div>
+        )
+      } -->
+      {
+        post.image ? (
+          <img
+            src={SITE.basePathname + post.image}
+            class="max-w-full lg:max-w-6xl mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
+            sizes="(max-width: 900px) 400px, 900px"
+            alt={post.description || ''}
+            loading="eager"
           />
         ) : (
           <div class="max-w-3xl mx-auto px-4 sm:px-6">

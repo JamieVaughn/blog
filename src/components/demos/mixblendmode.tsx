@@ -5,7 +5,6 @@ export function MixBlendMode() {
   const pickColor = (e) => {
     //             document.querySelector('#picker').addEventListener('change', function(e) {
 
-    //  console.log(e.target.value)
     //  document.querySelector('header').style.setProperty('background-image', 'none');
     resetBG();
     document.querySelector('#mix-blend-mode header')?.style.setProperty('background-color', e.target.value);

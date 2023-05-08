@@ -27,7 +27,7 @@ export const findImage = async (imagePath?: string) => {
   }
 
   if (!imagePath.startsWith('~/assets')) {
-    return null;
+    return imagePath;
   } // For now only consume images using ~/assets alias (or absolute)
 
   const images = await fetchLocalImages();

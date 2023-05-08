@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon';
 import { Picture } from '@astrojs/image/components';
-
+import { SITE } from '~/config.mjs';
 interface CallToAction {
   text: string;
   href: string;
@@ -104,6 +104,21 @@ const {
             </div>
           )
         }
+        <!-- {
+          image ? (
+            <img
+              src={image}
+              class="mx-auto rounded-md w-full"
+              sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+              {...image}
+              loading="lazy"
+            />
+          ) : (
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <div class="border-t dark:border-slate-700" />
+            </div>
+          )
+        } -->
       </div>
     </div>
   </div>
