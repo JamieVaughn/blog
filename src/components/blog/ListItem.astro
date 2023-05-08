@@ -33,10 +33,10 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
   {
     image && (
       <a class="relative block group" href={link ?? 'javascript:void(0)'}>
-        <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg">
+        <div class="relative h-0 md:h-72 overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg">
           <img
             src={SITE.basePathname + image}
-            class="md:object-cover w-full md:w-auto md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+            class="md:object-cover w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
             sizes="(max-width: 900px) 400px, 900px"
             alt={post.title || ''}
             loading="lazy"
