@@ -59,3 +59,18 @@
 [data-aw-toggle-menu].expanded g > path:last-child {
   @apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
+
+.dark p > code {
+  background-color: #555;
+  color: goldenrod !important;
+}
+p > code {
+  background-color: #0d1117;
+  color: #FFA657 !important;
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+p > code::before, p > code::after {
+  content: '' !important;
+}
