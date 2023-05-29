@@ -3,7 +3,7 @@ publishDate: null // 2023-05-09T12:35:07.322Z
 title: Expressions Over Statements
 description: Expressions Over Statements
 excerpt: Expressions Over Statements
-image: /images/waterfall_mill.jpg
+image: /images/prism_space.webp
 category: Articles
 tags:
   - JS
