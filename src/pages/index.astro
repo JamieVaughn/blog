@@ -1,18 +1,18 @@
 ---
-import { SITE } from '~/config.mjs';
-import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from "~/config.mjs";
+import Layout from "~/layouts/PageLayout.astro";
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import LatestPosts from '~/components/blog/LatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import HeroSVG from '~/components/blog/HeroSVG.astro';
+import Hero from "~/components/widgets/Hero.astro";
+import Note from "~/components/widgets/Note.astro";
+import Features from "~/components/widgets/Features.astro";
+import Features2 from "~/components/widgets/Features2.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Content from "~/components/widgets/Content.astro";
+import LatestPosts from "~/components/blog/LatestPosts.astro";
+import FAQs from "~/components/widgets/FAQs.astro";
+import Stats from "~/components/widgets/Stats.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import HeroSVG from "~/components/blog/HeroSVG.astro";
 
 const meta = {
   title: SITE.title,
@@ -25,14 +25,22 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction2={{ text: 'All Posts →', href: '/blog/blog' /*icon: 'tabler:arrow-big-right-filled'*/ }}
-    callToAction={{ text: 'Featured Post', href: '/blog/nullish_checking_js#featured' }}
+    callToAction2={{
+      text: "All Posts →",
+      href: "/blog/blog" /*icon: 'tabler:arrow-big-right-filled'*/,
+    }}
+    callToAction={{
+      text: "Featured Post",
+      href: "/blog/nullish_checking_js#featured",
+    }}
   >
     <Fragment slot="title">Make 🏗️ Devs</Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Sharing observations & lessons about the <span class="font-semibold">web platform</span>.
+        Sharing observations & lessons about the <span class="font-semibold"
+          >web platform</span
+        >.
       </span>
     </Fragment>
     <Fragment slot="image">
@@ -201,34 +209,36 @@ const meta = {
     highlight="Topics"
     items={[
       {
-        title: 'HTML',
-        description: 'Latest specification changes',
-        icon: 'flat-color-icons:template',
+        title: "HTML",
+        description: "Latest specification changes",
+        icon: "flat-color-icons:template",
       },
       {
-        title: 'CSS',
-        description: 'The best, most clever css techniques',
-        icon: 'flat-color-icons:gallery',
+        title: "CSS",
+        description: "The best, most clever css techniques",
+        icon: "flat-color-icons:gallery",
       },
       {
-        title: 'Javascript',
-        description: 'The lingua franca of the web',
-        icon: 'flat-color-icons:document',
+        title: "Javascript",
+        description: "The lingua franca of the web",
+        icon: "flat-color-icons:document",
       },
       {
-        title: 'Applications',
-        description: 'Common use cases',
-        icon: 'icon-park:page-template',
+        title: "Applications",
+        description: "Common use cases",
+        icon: "icon-park:page-template",
       },
       {
-        title: 'Courses',
-        description: 'Courses that I offer',
-        icon: 'flat-color-icons:advertising',
+        title: "Courses",
+        description: "Courses that I offer",
+        icon: "flat-color-icons:advertising",
+        url: "https://mcc.dev",
       },
       {
-        title: 'Contact Me',
-        description: "If you'd like to work with me, let me know!",
-        icon: 'flat-color-icons:business-contact',
+        title: "Data Visualization",
+        description: "Visit graphicules.com for data viz stories",
+        icon: "flat-color-icons:business-contact",
+        url: "https://graphicules.com",
       },
     ]}
   />
@@ -239,20 +249,20 @@ const meta = {
     title="Find more posts!"
     information={`The archive of all authored posts is available below`}
     postIds={[
-      'arity_polymorphism.md',
-      'chained_css.md',
-      'good_parts_crockford.md',
-      'good_parts_simpson.md',
-      'immutability.md',
-      'lists.md',
-      'lookup_tables.md',
-      'mixblend_mode.md',
-      'nothing_is_something.md',
-      'null_object_fp.md',
-      'nullish_checking_js.md',
-      'state_reducers.md',
-      'use_effect.md',
-      'uuids.md',
+      "arity_polymorphism.md",
+      "chained_css.md",
+      "good_parts_crockford.md",
+      "good_parts_simpson.md",
+      "immutability.md",
+      "lists.md",
+      "lookup_tables.md",
+      "mixblend_mode.md",
+      "nothing_is_something.md",
+      "null_object_fp.md",
+      "nullish_checking_js.md",
+      "state_reducers.md",
+      "use_effect.md",
+      "uuids.md",
     ]}
   />
 

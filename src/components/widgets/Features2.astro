@@ -1,10 +1,12 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from "astro-icon";
+import { a } from "dist/_astro/web.3e2dbfa3";
 
 interface Item {
   title?: string;
   description?: string;
   icon?: string;
+  url?: string;
 }
 
 export interface Props {
@@ -15,15 +17,19 @@ export interface Props {
 }
 
 const {
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
   highlight,
   items = [],
 } = Astro.props;
 ---
 
 <section class="relative">
-  <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800 pointer-events-none mb-32" aria-hidden="true"></div>
+  <div
+    class="absolute inset-0 bg-blue-50 dark:bg-slate-800 pointer-events-none mb-32"
+    aria-hidden="true"
+  >
+  </div>
   <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 -mb-12">
     <div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
       {
@@ -51,15 +57,23 @@ const {
           </div>
         )
       }
-      <div class={`grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-12 dark:text-white items-stretch`}>
+      <div
+        class={`grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-12 dark:text-white items-stretch`}
+      >
         {
-          items.map(({ title, description, icon }) => (
+          items.map(({ title, description, icon, url }) => (
             <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-lg hover:shadow-md transition border border-transparent dark:border-slate-800">
               <div class="flex items-center">
                 <Icon name={icon} class="w-10 h-10" />
                 <div class="ml-4 text-xl font-bold">{title}</div>
+                {url && <a href={url} target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="216 104 215.99 40.01 152 40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="136" y1="120" x2="216" y2="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M184,136v72a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8h72" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></a>}
               </div>
-              {description && <p class="text-muted dark:text-gray-400 text-md mt-4" set:html={description} />}
+              {description && (
+                <p
+                  class="text-muted dark:text-gray-400 text-md mt-4"
+                  set:html={description}
+                />
+              )}
             </div>
           ))
         }
