@@ -19,7 +19,7 @@ export const get = async () => {
     description: SITE.description,
     site: import.meta.env.SITE,
 
-    items: posts.map((post) => ({
+    items: posts.filter(post => !post?.draft || post.publishDate).map((post) => ({
       link: getPermalink(post.permalink, 'post'),
       title: post.title,
       description: post.description,

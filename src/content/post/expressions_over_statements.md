@@ -1,17 +1,18 @@
 ---
-publishDate: null // 2023-05-09T12:35:07.322Z
+# publishDate: null // 2023-05-09T12:35:07.322Z
 title: Expressions Over Statements
 description: Expressions Over Statements
 excerpt: Expressions Over Statements
 image: /images/prism_space.webp
 category: Articles
+draft: true
 tags:
   - JS
   - Functional
 canonical: https://wjv.io/blog/expressions_over_statements
 ---
 
-## everything is an expression
+## Everything is an expression
 
 An expression is any valid unit of code that resolves to a value.
 

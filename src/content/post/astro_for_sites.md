@@ -5,7 +5,6 @@ description: Astro for sites, Solid or Svelte for Apps.
 excerpt: Astro for sites, Solid or Svelte for Apps.
 image: /images/chaos.jpg
 category: Articles
-# draft: true
 tags:
   - HTML
   - Astro

@@ -1,10 +1,11 @@
 ---
-publishDate: null // 2023-05-09T12:35:07.322Z
+# publishDate: null // 2023-05-09T12:35:07.322Z
 title: Barnum Statements
 description: Barnum Statements
 excerpt: Barnum Statements
 image: /images/waterfall_mill.jpg
 category: Articles
+draft: true
 tags:
   - JS
   - Logic
