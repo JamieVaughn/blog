@@ -11,7 +11,7 @@ tags:
 canonical: https://wjv.io/blog/use_effect
 ---
 
-React Hooks are amazing. I find they make it incredibly easy to modularize any piece of logic and then use it seemlessly anywhere in your app. We now get statefulness or statelessness within a consistent function component API by recasting lifecycle hooks as a set of distinct, composable event subscription methods or "Hooks". This lets us cleanly group state/action/effect by feature or component, effectively providing us with extensible mixins lacking in `Class` components. Yes, there were HOCs for `Class` components but those were kludgy for sharing non-presentational logic, with Hooks the non-presentational logic can be easily composed and shared in a function's closure.
+React Hooks are amazing. I find they make it incredibly easy to modularize any piece of logic and then use it seemlessly anywhere in your app. We now get statefulness or statelessness within a consistent function component API by recasting lifecycle hooks as a set of distinct, composable event subscription methods or "Hooks". This lets us cleanly group state/action/effect by feature or component, effectively providing us with extensible functionality lacking in `Class` components. Yes, there were HOCs for `Class` components but those were kludgy for sharing non-presentational logic, with Hooks the non-presentational logic can be easily composed and shared in a function's closure.
 
 One Hook in particular, `useEffect()` is extremely powerful, but it is also confusing especially to those learning a Javascript framework for the first time. I also sometimes hear of veteran React users lamenting the demise of React's life cycle methods and deriding `useEffect()` as a step backwards in some way from those.
 
@@ -31,7 +31,7 @@ With `useEffect()`, we essentially have an off-the-shelf `addEventListener()` wh
 
 So Promises let us sequentially tie an initiation of a callback to a trigger, independently of time. And `useEffect()` let's sequentially tie a callback to a change in a value of interest. You can think of this trigger as an "app state event", which is no different conceptually to the browser events were familiar with like `"click"`, `"mouseover"`, `"scroll"`, etc. But now instead of a set number of listenable events provided to us from the browser, we can now listen to a change on any and every variable in our app.
 
-Consider if the authors of React had made the call signature of `useEffect()` more like `addEvenListener()`:
+Consider if the authors of React had made the call signature of `useEffect()` more like `addEventListener()`:
 
 ```js
 useEffectListener([foo], () => {

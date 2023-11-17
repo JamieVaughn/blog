@@ -1,6 +1,7 @@
 # Todo list for this project
 
 - Make mdx files work
+- Add section for handling NaN in nullish valueOf article
 - fix linkouts/linkbacks
 - dialog all the things post
 - Make everything an expression in JS post
