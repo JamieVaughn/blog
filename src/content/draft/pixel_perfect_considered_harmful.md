@@ -15,10 +15,12 @@ canonical: https://wjv.io/blog/pixel_perfect_considered_harmful
 # Pixel Perfect Considered Harmful
 
 The QA response came back. My code got kicked back into ready for dev... again.
-This time the space between the list of cards was greater than the 12px shown in the figma mock up.
+This time the space between the list of cards was greater than the 12px shown in the Figma mock up.
 
-Nevermind the figma viewport was sized to a tablet and the QA team uses double wide monitors. The devs have laptops and our customers typically visit on mobile anyways.
-The problem with the pixel perfect mentality is that it causes people to think that static design mocks rendered in a single aspect ratio and single viewport dimension can somehow accurately reflect how the app will look for all viewports and aspect ratios for any device out there.
+Never mind that the Figma viewport was sized to a tablet and the QA team uses their laptop screens. The devs mostly work on double wide monitors and our customers typically visit on mobile anyways.
+The pixel perfect mentality causes product reviewers, stakeholders and QA folks to think that the static design mocks rendered in a single aspect ratio and single viewport dimension are some kind of gospel that must be exactly how the deployed final result must strictly adhere to.
+But obviously a single Figma design mock cannot somehow accurately reflect how the app will look for all viewports and aspect ratios or for any device out there. And the design team doesn't have time to provide high fidelity mocks for all media breakpoints. Nor should they! It would be a waste of their time to do so rather than get on with thinking about the next feature, anyways.
+So what's the problem with the pixel perfect mentality? It's a matter of prioritizing the wrong dimension of a result. It's an especially pernicious manifestation of Goodhart's Law: "When a measure becomes a target, it ceases to be a good measure". In this case, a pixel perfect measure causes reviewers to hyper focus on the wrong result and that can easily cause a development & design team to waste cycles on the wrong things. They'll put effort into marginal design breakpoint tweaks rather than features users really need.
 
 Here's some CSS that should change in proportion to the viewport: font-size, white-space of any kind, padding, margin gaps, number of columns/rows, widths/heights of containers, icon sizes,
 
@@ -39,7 +41,7 @@ We have to plan for dynamism and plan for varieties instead because so much with
 7. The user preferences such as reduced motion, dark mode, font size settings etc.
 
 the pixel perfect mindset often overlooks the dynamic nature of textual content, layouts and also the containers that the content gets framed in. It's essential to embrace fluidity through responsive units like viewport widths and dynamic calculations. The thing is by embracing the fluidity and dynamism, there is no guarantee anymore that your margin between some border and the edge of the screen or even the edge of the next content container will be the absolute 8 pixels reflected in the design software.
-In design software such as figma, dimensions are always reported in absolute units, commonly pixels. But that creates an inflexible absolute layout and componet design result. Instead, adopting relative units such as percentages, viewport widths, and calculated values allows for a more adaptable layout that caters to the diversity of user devices.
+In design software such as Figma, dimensions are always reported in absolute units, commonly pixels. But that creates an inflexible absolute layout and componet design result. Instead, adopting relative units such as percentages, viewport widths, and calculated values allows for a more adaptable layout that caters to the diversity of user devices.
 
 
 
