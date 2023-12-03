@@ -89,3 +89,7 @@ jisp?
 * 		most modern languages
 * 		now support this style. And they support the style
 * 		specifically by supporting lambda expressions.
+
+
+declarative relies on expressions while procedural/imperative uses statements
+Declarative code follows the general attitude of `.map()` in that a declaration will cause a transform pipeline to execute which yield a one-to-one result with what's expressed.
