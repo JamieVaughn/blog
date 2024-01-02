@@ -74,3 +74,4 @@ In both cases above some unknown data is produced for the program at runtime tha
 
 In fact, the manipulative uses of barnum statements do exactly that. They dress up a claim or statement in layers of flourish so it doesn't seem obvious at first glance, but it will lead the audience fatefully down only one possible path, despite presenting other paths as possibilities in order to gain credibility.
 
+Kolmogorov Complexity. In a sense once, you have the user input and/or program's input all programs reduce down to their barnum expression to their referentially transparent output.
