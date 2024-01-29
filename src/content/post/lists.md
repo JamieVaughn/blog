@@ -59,4 +59,4 @@ You characterize the tasks on paper and the materializing of the words evaporate
 
 Breaking up a large, high-level decision into a list of small, easy-to-handle, sub-components makes the whole problem soluble. After you've completed one of the sub-items on the list, the satisfaction of crossing it out helps perpetuate your momentum. 
 
-Aren't lists are wonderful?! It's no wonder they also make for time-tested UI/UX formats and useful data structures in programming!
+Aren't lists just wonderful?! It's no wonder they also make for time-tested UI/UX formats and useful data structures in programming!

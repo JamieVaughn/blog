@@ -37,7 +37,7 @@ So it is not really a big deal to write that code above and one could even creat
 
 ```js
 function isNullish(param) {
-  return param === null || param === undefined ? true : false;
+  return param === null || param === undefined;
 }
 
 function stringify(param) {
@@ -93,6 +93,6 @@ console.log(literalObj.valueOf); // ƒ valueOf() { [native code] }
 
 I believe using `Object.create` this way is an anti-pattern and should never be done. [Douglas Crockford has expressed similar opinions as this](/blog/good_parts_crockford) and recommends never using `Object.create` at all. He recommends just declaring object literals instead. Indeed, you'll never encounter a null Object in Javascript unless your code or code you import invokes the `Object.create(null)` code in that way. However I have encountered a few libraries on npm that initialize objects like this, I suppose to reduce their size, so it is out there even if you never write that line yourself.
 
-So you if you want to start using the `valueOf` trick for nullish checking you'll have to be on guard for libraries in your dependency chain that do this (and you'll have to make sure you don't do it either, of course, but that's easier to ensure). Luckily checking your dependencies for this pitfall isn't too difficult withmodern editors by just searching for the string `Object.create(null)` in your dependencies (node_modules) directory.
+So you if you want to start using the `valueOf` trick for nullish checking you'll have to be on guard for libraries in your dependency chain that do this (and you'll have to make sure you don't do it either, of course, but that's easier to ensure). Luckily checking your dependencies for this pitfall isn't too difficult with modern editors by just searching for the string `Object.create(null)` in your dependencies (node_modules) directory.
 
 And to all you library authors out there, please reconsider reaching for the `Object.create(null)` anti-pattern! It's not worth it to save a few bytes!

@@ -14,9 +14,9 @@ canonical: https://wjv.io/blog/expressions_over_statements
 
 ## Everything is an expression
 
-An expression is any valid unit of code that resolves to a value.
+An expression is any line or block of code that resolves to a value.
 
-At its simplest terms, expressions are evaluated to produce a value. On the other hand, statements are executed to make something happen.
+At its most basic, expressions are evaluated to produce a value. Expressions are in contrast to statements, which are a line or block of code that that executes to make something happen but does not resolve to a value itself. In other words, it's a line or block of code that generates side effects.
 
 Here’s a general rule of thumb: If you can print it, or assign it to a variable, it’s an expression. If you can’t, it’s a statement.
 
@@ -52,6 +52,19 @@ Statement: a unit of code representing one instruction or more, usually starts w
 > if () {}
 > for () {}
 > while () {}
+
+
+important points:
+- no side effects
+- referential transparency
+- pure functions have referential transparency
+- return values
+- assignments
+- composition
+- deteriministic evalutaion
+- immutable state
+- 
+- all of this combines to make it easier to reason about the correctness of a program and also to be successful in debugging, extending & maintaining software.
 
 
 
