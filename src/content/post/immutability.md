@@ -45,9 +45,12 @@ arr.some()
 arr.every()
 arr.find()
 arr.findIndex()
+arr.findLast() // finds from the end
+arr.findLastIndex() // finds from the end
 arr.join()
 arr.toString()
 arr.toSpliced()
+arr.with() // a simpler .toSpliced
 arr.toReversed()
 arr.toSorted()
 [...arr, 4, 5]
@@ -56,7 +59,10 @@ Object.assign({}, obj)
 Object.freeze()
 ```
 
-Note the recent immutable methods `toSpliced`<sup><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSpliced">1</a></sup>, `toReversed`<sup><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed">2</a></sup>, and `toSorted`<sup><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted">3</a></sup> have similarly named methods that cause mutation (`.reverse`, `.sort` & `.splice`), so be careful not to mix them up.
+Note the recent immutable methods `toSpliced()`<sup><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSpliced">1</a></sup>,
+ `with()`<sup><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with">2</a></sup>,
+ `toReversed()`<sup><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed">3</a></sup>,
+ and `toSorted()`<sup><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted">4</a></sup> have similarly named methods that cause mutation (`.reverse`, `.sort`, `.splice` & the top level `with` statement), so be careful not to mix them up.
 
 Check MDN's [Array methods in the side bar on the left](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#) for an exhaustive list.
 
