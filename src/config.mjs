@@ -8,8 +8,7 @@ const CONFIG = {
   trailingSlash: false,
 
   title: 'Astro Blog',
-  description:
-    'Make 🏗️ Devs Blog',
+  description: 'Make 🏗️ Devs Blog',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
