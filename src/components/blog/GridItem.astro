@@ -1,10 +1,8 @@
 ---
-import { Picture } from '@astrojs/image/components';
 
 import { SITE, BLOG } from '~/config.mjs';
 import type { Post } from '~/types';
 
-import { findImage } from '~/utils/images';
 import { getPermalink } from '~/utils/permalinks';
 
 export interface Props {
@@ -12,7 +10,6 @@ export interface Props {
 }
 
 const { post } = Astro.props;
-const image = await findImage(post.image);
 ---
 
 <article class="mb-6 transition">
@@ -63,4 +60,4 @@ const image = await findImage(post.image);
   </h3>
   <p class="text-muted dark:text-slate-400 text-lg">{post.excerpt || post.description}</p>
 </article>
-~/utils/images1
+
