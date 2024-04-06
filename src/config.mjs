@@ -4,7 +4,7 @@ const CONFIG = {
   name: 'Make 🏗️ Devs',
 
   origin: 'https://wjv.io',
-  basePathname: '/', // '/blog'
+  basePathname: '/blog', // '/blog'
   trailingSlash: false,
 
   title: 'Astro Blog',
@@ -22,9 +22,6 @@ const CONFIG = {
     day: 'numeric',
     timeZone: 'UTC',
   }),
-
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: 'G-XXXX',
 
   blog: {
     disabled: false,
