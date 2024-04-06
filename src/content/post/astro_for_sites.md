@@ -3,7 +3,7 @@ publishDate: 2023-01-31T11:43:57.322Z
 title: Astro for sites
 description: Astro for sites, Solid or Svelte for Apps.
 excerpt: Astro for sites, Solid or Svelte for Apps.
-image: images/chaos.jpg
+image: /images/chaos.jpg
 category: Articles
 tags:
   - HTML

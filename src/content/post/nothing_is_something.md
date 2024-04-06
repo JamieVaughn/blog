@@ -3,7 +3,7 @@ publishDate: 2021-01-18T05:25:07.322Z
 title: Composition over Inheritance and Revisiting the Null Object Pattern
 description: Composition over Inheritance and Revisiting the Null Object Pattern
 excerpt: Composition over Inheritance and Revisiting the Null Object Pattern
-image: images/floating_elevator.jpg
+image: /images/floating_elevator.jpg
 category: Articles
 tags:
   - JavaScript

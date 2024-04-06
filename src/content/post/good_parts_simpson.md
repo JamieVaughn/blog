@@ -3,7 +3,7 @@ publishDate: 2019-12-31T20:50:07.322Z
 title: The Good and Bad Parts of JS (according to Kyle Simpson)
 description: Notes of the good parts of Javascript and the parts to avoid according to Kyle Simpson's books and lectures.
 excerpt: Notes of the good parts of Javascript and the parts to avoid according to Kyle Simpson's books and lectures.
-image: images/painter_of_reality.jpg
+image: /images/painter_of_reality.jpg
 category: Articles
 tags:
   - Javascript

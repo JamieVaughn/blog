@@ -3,7 +3,7 @@
 title: Classless CSS
 description: Classless css is catching on. HTML already has plenty of attributes to hook css onto, let's declutter by not using classes anymore.
 excerpt: Classless css is catching on. HTML already has plenty of attributes to hook css onto, let's declutter by not using classes anymore.
-image: images/waterfall_mill.jpg
+image: /images/waterfall_mill.jpg
 category: Articles
 draft: true
 tags:

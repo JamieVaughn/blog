@@ -3,7 +3,7 @@
 title: Pixel Perfect Considered Harmful
 description: Pixel Perfect Considered Harmful
 excerpt: Pixel Perfect Considered Harmful
-image: images/valley_village.jpg
+image: /images/valley_village.jpg
 category: Articles
 draft: true
 tags:

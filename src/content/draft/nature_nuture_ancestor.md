@@ -3,7 +3,7 @@
 title: Nature, Nuture, Ancestor
 description: Nature, Nuture, Ancestor
 excerpt: Nature, Nuture, Ancestor
-image: images/waterfall_mill.jpg
+image: /images/waterfall_mill.jpg
 category: Articles
 draft: true
 tags:

@@ -3,7 +3,7 @@ publishDate: 2020-07-20T08:50:00.322Z
 title: Lookup-Table Syntax Options in Javascript
 description: Let's see a few ways to create lookup-tables in Javascript
 excerpt: Let's see a few ways to create lookup-tables in Javascript
-image: images/robobot.jpg
+image: /images/robobot.jpg
 category: Articles
 tags:
   - Javascript

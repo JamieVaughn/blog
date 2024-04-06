@@ -3,7 +3,7 @@
 title: Barnum Statements
 description: Barnum Statements
 excerpt: Barnum Statements
-image: images/waterfall_mill.jpg
+image: /images/waterfall_mill.jpg
 category: Articles
 draft: true
 tags:

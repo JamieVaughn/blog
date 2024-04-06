@@ -4,7 +4,7 @@
 title: Refactoring Ternaries
 description: Refactoring Ternaries
 excerpt: Refactoring Ternaries
-image: images/valley_village.jpg
+image: /images/valley_village.jpg
 category: Articles
 draft: true
 tags:

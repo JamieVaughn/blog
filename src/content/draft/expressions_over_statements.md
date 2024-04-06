@@ -3,7 +3,7 @@
 title: Expressions Over Statements
 description: Expressions Over Statements
 excerpt: Expressions Over Statements
-image: images/prism_space.webp
+image: /images/prism_space.webp
 category: Articles
 draft: true
 tags:

@@ -3,7 +3,7 @@
 title: Dialog All The Things
 description: Using the dialog html element for multiple UI patterns
 excerpt: Using the dialog html element for multiple UI patterns
-image: images/waterfall_mill.jpg
+image: /blog/waterfall_mill.jpg
 category: Articles
 draft: true
 tags:

@@ -3,7 +3,7 @@ publishDate: 2022-02-06T05:35:07.322Z
 title: Lists, Lists, Lists
 description: Lists as data structures, presentational design and real life things.
 excerpt: Lists as data structures, presentational design and real life things.
-image: images/stickers.jpg
+image: /images/stickers.jpg
 category: Articles
 tags:
   - JavaScript

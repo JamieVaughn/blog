@@ -3,7 +3,7 @@ publishDate: 2021-02-05T10:35:07.322Z
 title: React's useEffect as an "Event Listener"
 description: Learning useEffect can be challenging to newcomers to React, but teaching it as an analog to addEventListener can make it easier
 excerpt: Learning useEffect can be challenging to newcomers to React, but teaching it as an analog to addEventListener can make it easier
-image: images/halfling_ranger.jpg
+image: /images/halfling_ranger.jpg
 category: Articles
 tags:
   - JavaScript

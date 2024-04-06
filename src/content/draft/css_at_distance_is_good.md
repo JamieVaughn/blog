@@ -3,7 +3,7 @@
 title: CSS At A Distance Is Good
 description: CSS At A Distance Is Good
 excerpt: CSS At A Distance Is Good
-image: images/waterfall_mill.jpg
+image: /images/waterfall_mill.jpg
 category: Articles
 draft: true
 tags:

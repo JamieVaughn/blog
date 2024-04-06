@@ -3,7 +3,7 @@ publishDate: null // 2023-06-09T12:35:07.322Z
 title: Minimum Viable Frontend Developer
 description: Minimum Viable Frontend Developer
 excerpt: Minimum Viable Frontend Developer
-image: images/waterfall_mill.jpg
+image: /images/waterfall_mill.jpg
 category: Articles
 tags:
   - JS

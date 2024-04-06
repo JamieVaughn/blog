@@ -3,7 +3,7 @@ publishDate: 2019-12-30T14:50:07.322Z
 title: The Good and Bad Parts of JS (according to Douglas Crockford)
 description: Notes of the good parts of Javascript and the parts to avoid according to Douglas Crockford's books and lectures.
 excerpt: Notes of the good parts of Javascript and the parts to avoid according to Douglas Crockford's books and lectures.
-image: images/first_mover.jpg
+image: /images/first_mover.jpg
 category: Articles
 tags:
   - Javascript

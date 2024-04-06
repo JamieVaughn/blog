@@ -3,7 +3,7 @@ publishDate: 2019-12-29T12:35:07.322Z
 title: Chained CSS Classes - A Proposal
 description: A thought experiment on what BEM CSS could look like as simply chained classes...
 excerpt: A thought experiment on what BEM CSS could look like as simply chained classes...
-image: images/waterfall_mill.jpg
+image: /images/waterfall_mill.jpg
 category: Articles
 tags:
   - CSS

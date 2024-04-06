@@ -3,7 +3,7 @@
 title: WASM's Killer App
 description: WASM's Killer App
 excerpt: WASM's Killer App
-image: images/waterfall_mill.jpg
+image: /images/waterfall_mill.jpg
 category: Articles
 draft: true
 tags:

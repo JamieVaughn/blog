@@ -3,7 +3,7 @@
 title: Ditch Redux & Use CustomEvent for a Native Reducers
 description: Ditch Redux & Use CustomEvent for a Native Reducers
 excerpt: Ditch Redux & Use CustomEvent for a Native Reducers
-image: images/waterfall_mill.jpg
+image: /blog/waterfall_mill.jpg
 category: Articles
 draft: true
 tags:

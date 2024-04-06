@@ -3,7 +3,7 @@
 title: Frontend Developer Course Launch - Monroecc.dev
 description: Frontend Developer Course Launch at monroecc.dev
 excerpt: Frontend Developer Course has Launched at monroecc.dev
-image: images/prism_space.webp
+image: /images/prism_space.webp
 category: Articles
 draft: true
 tags:
