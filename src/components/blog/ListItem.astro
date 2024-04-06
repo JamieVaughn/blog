@@ -17,15 +17,6 @@ const { post } = Astro.props;
 const image = await findImage(post.image);
 
 const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, "post") : "";
-
-// <Picture
-//               src={image}
-//               class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
-//               widths={[400, 900]}
-//               sizes="(max-width: 900px) 400px, 900px"
-//               alt={post.title}
-//               aspectRatio="16:9"
-//             />
 ---
 
 <article
@@ -52,7 +43,7 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, "post") : "";
         <span class="text-sm">
           <Icon
             name="clock"
-            class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400"
+            class="inline-block -mt-0.5"
           />
           <time datetime={String(post.publishDate)}
             >{getFormattedDate(post.publishDate)}</time
@@ -62,6 +53,10 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, "post") : "";
               <>
                 {" "}
                 ·
+                <Icon
+                  name="label"
+                  class="inline-block -mt-0.5"
+                />
                 <a
                   class="capitalize hover:underline"
                   href={getPermalink(post.category, "category")}
@@ -99,7 +94,7 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, "post") : "";
       )
     }
     <footer class="mt-5">
-      <PostTags tags={post.tags} />
+      <PostTags tags={post.tags} class="inline-block"/>
     </footer>
   </div>
 </article>

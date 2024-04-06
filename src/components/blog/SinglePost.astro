@@ -36,6 +36,10 @@ const { post, url } = Astro.props;
               <>
                 {" "}
                 ·
+                <Icon
+                  name="label"
+                  class="inline-block -mt-0.5"
+                />
                 <a
                   class="capitalize hover:underline"
                   href={getPermalink(post.category, "category")}

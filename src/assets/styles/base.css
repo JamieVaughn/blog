@@ -48,7 +48,9 @@
 [astro-icon].icon-bold > * {
   stroke-width: 2.4;
 }
-
+.dark [astro-icon].icon-bold g {
+  stroke: white;
+}
 [data-aw-toggle-menu] path {
   @apply transition;
 }
