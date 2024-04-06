@@ -2,7 +2,7 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "strictNullChecks": true,
-    "baseUrl": "/blog",
+    "baseUrl": ".",
     "paths": {
       "~/*": [
         "src/*"

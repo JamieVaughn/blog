@@ -4,7 +4,7 @@ const CONFIG = {
   name: 'Make 🏗️ Devs',
 
   origin: 'https://wjv.io',
-  basePathname: '/blog', // '/blog'
+  basePathname: '/', // '/blog'
   trailingSlash: false,
 
   title: 'Astro Blog',
