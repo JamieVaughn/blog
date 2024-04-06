@@ -1,0 +1,15 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "baseUrl": "/Users/jamie/Dev/code.mcc/blog",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+      "types": ["vite/client"] 
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+  }
+}

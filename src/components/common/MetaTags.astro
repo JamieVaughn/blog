@@ -1,0 +1,83 @@
+---
+import { AstroSeo } from '@astrolib/seo';
+
+import { SITE } from '~/config.mjs';
+import type { MetaSEO } from '~/types';
+import { getCanonical } from '~/utils/permalinks';
+import { getRelativeUrlByFilePath } from '~/utils/directories';
+
+import CustomStyles from '~/components/CustomStyles.astro';
+
+export interface Props extends MetaSEO {
+  dontUseTitleTemplate?: boolean;
+}
+
+const defaultImage = 'blog-placeholder-4.jpg';
+
+const {
+  title = SITE.name,
+  description = '',
+  image: _image = defaultImage,
+
+  canonical = getCanonical(String(Astro.url.pathname)),
+  noindex = false,
+  nofollow = false,
+
+  ogTitle = title,
+  ogType = 'website',
+
+  dontUseTitleTemplate = false,
+} = Astro.props;
+
+const image =
+  typeof _image === 'string'
+    ? new URL(_image, Astro.site)
+    : _image && typeof _image['src'] !== 'undefined'
+    ? // @ts-ignore
+      new URL(getRelativeUrlByFilePath(_image.src), Astro.site)
+    : null;
+
+const emojiFavicon = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>"
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<AstroSeo
+  title={title}
+  titleTemplate={dontUseTitleTemplate ? '%s' : `%s — ${SITE.name}`}
+  description={description}
+  canonical={String(canonical)}
+  noindex={noindex}
+  nofollow={nofollow}
+  openGraph={{
+    url: String(canonical),
+    title: ogTitle,
+    description: description,
+    type: ogType,
+    images: image
+      ? [
+          {
+            url: image.toString(),
+            alt: ogTitle,
+          },
+        ]
+      : undefined,
+    // site_name: 'SiteName',
+  }}
+  twitter={{
+    // handle: '@handle',
+    // site: '@site',
+    cardType: image ? 'summary_large_image' : undefined,
+  }}
+/>
+
+<CustomStyles />
+
+<!-- Goat Counter Analytics -->
+<script is:inline data-goatcounter="https://wjv.goatcounter.com/count" async src="//gc.zgo.at/count.js" data-respect-dnt={true} data-no-cookie={false}></script>
+
+
+<link rel="shortcut icon" href={emojiFavicon} />
+<link rel="icon" href={emojiFavicon}>
+<link rel="mask-icon" href={emojiFavicon} color="#8D46E7" />

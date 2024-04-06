@@ -1,0 +1,28 @@
+---
+publishDate: 2021-03-17T12:15:07.322Z
+title: Using the CSS Mix Blend Mode for dark/light theme
+description: CSS offers a nifty mix blend mode feature which can handle giving text a contrasting color based on the background color.
+excerpt: CSS offers a nifty mix blend mode feature which can handle giving text a contrasting color based on the background color.
+image: images/pastel_galaxy.jpg
+category: Demos
+tags:
+  - CSS
+  - Design
+canonical: https://wjv.io/blog/mixblendmode
+---
+
+import MixBlendMode from '~/components/demos/Mixblendmode.astro'
+
+## First, Let's See It In Action!
+
+Play around with the background colors and images of the demonstration widget below and watch the text color seemlessly adapt. The inputs and toggles are not controlling the text color properties, they are only changing the background properties. CSS's mixblend mode is set on the text to use the <code>difference</code> value, so that the text will always find a hue that is opposite the background hue.
+<hr />
+<h2>Demontration Widget: </h2>
+<MixBlendMode />
+<hr />
+
+This is an uncommon css property but it has so much potential! It should be used more often I think.
+
+An obvious use case is a way to make sure text has a high contrast for accessibility purposes no matter what background color is active. This could be paired with a light/dark mode toggle for easy adaptive, light/dark mode text.
+
+There's plenty of other possibilities for <code>mix-blend-mode</code>, so go experiment with it yourself and see what you can discover!

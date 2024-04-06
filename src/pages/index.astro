@@ -1,0 +1,111 @@
+---
+import { SITE } from "~/config.mjs";
+import Layout from "~/layouts/PageLayout.astro";
+
+import Hero from "~/components/widgets/Hero.astro";
+import Note from "~/components/widgets/Note.astro";
+import Features from "~/components/widgets/Features.astro";
+import LatestPosts from "~/components/blog/LatestPosts.astro";
+import HeroSVG from "~/components/blog/HeroSVG.astro";
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+  <Hero
+    callToAction2={{
+      text: "All Posts →",
+      href: "/blog",
+    }}
+    callToAction={{
+      text: "Featured Post",
+      href: "/nullish_checking_js#featured",
+    }}
+  >
+    <Fragment slot="title">Make 🏗️ Devs</Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Sharing observations & lessons about the <span class="font-semibold"
+          >web platform</span
+        >.
+      </span>
+    </Fragment>
+    <Fragment slot="image">
+      <HeroSVG />
+      <a class="block text-center text-xs -translate-y-6" href="https://designs.ai/graphicmaker/illustrations/All/257-planting-trees">via designs.ai</a>
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- Features Widget ************** -->
+
+  <Features
+    title="Covered Here"
+    subtitle="Sharing observations about the web platform"
+    highlight="Topics"
+    items={[
+      {
+        title: "HTML",
+        description: "The web's foundation, from principles to specification",
+        icon: "template",
+      },
+      {
+        title: "CSS",
+        description: "The latest css techniques & layouts",
+        icon: "gallery",
+      },
+      {
+        title: "Javascript",
+        description: "The lingua franca of the web",
+        icon: "document",
+      },
+      {
+        title: "Applications",
+        description: "Common use cases",
+        icon: "page-template",
+      },
+      {
+        title: "Courses",
+        description: "Frontend Developer Professional Certification",
+        icon: "advertising",
+        url: "https://monroecc.dev",
+      },
+      {
+        title: "Data Visualization",
+        description: "Visit graphicules.com for data viz stories",
+        icon: "business-contact",
+        url: "https://graphicules.com",
+      },
+    ]}
+  />
+
+  <LatestPosts
+    title="Find more posts!"
+    information={`The archive of all authored posts is available below`}
+    postIds={[
+      "arity_polymorphism.md",
+      "chained_css.md",
+      "good_parts_crockford.md",
+      "good_parts_simpson.md",
+      "immutability.md",
+      "lists.md",
+      "lookup_tables.md",
+      "mixblend_mode.mdx",
+      "nothing_is_something.md",
+      "null_object_fp.md",
+      "nullish_checking_js.md",
+      "state_reducers.md",
+      "use_effect.md",
+      "uuids.mdx",
+    ]}
+  />
+</Layout>

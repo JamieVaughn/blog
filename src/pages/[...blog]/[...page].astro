@@ -1,0 +1,43 @@
+---
+import { SITE, BLOG } from '~/config.mjs';
+
+import Layout from '~/layouts/PageLayout.astro';
+import BlogList from '~/components/blog/List.astro';
+import Headline from '~/components/blog/Headline.astro';
+import Pagination from '~/components/blog/Pagination.astro';
+
+import { fetchPosts } from '~/utils/blog';
+import { BLOG_BASE } from '~/utils/permalinks';
+import type { PathsType } from '~/types';
+
+export async function getStaticPaths({ paginate }: PathsType) {
+  if (BLOG?.disabled || BLOG?.list?.disabled) return [];
+  const posts = await fetchPosts();
+  return paginate(posts, {
+    params: { blog: BLOG_BASE || undefined },
+    pageSize: BLOG.postsPerPage,
+  });
+}
+
+const { page } = Astro.props;
+const currentPage = page.currentPage ?? 1;
+
+const meta = {
+  title: `Blog${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  description: SITE.description,
+  noindex: BLOG?.list?.noindex || currentPage > 1,
+  ogType: 'post',
+};
+---
+
+<Layout {meta}>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+    <Headline
+      subtitle={`${SITE.name}: Observations & lessons on the web platform`}
+    >
+      Posts
+    </Headline>
+    <BlogList posts={page.data} />
+    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+  </section>
+</Layout>
