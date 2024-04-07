@@ -12,9 +12,9 @@ tags:
 canonical: https://wjv.io/blog/pixel_perfect_considered_harmful
 ---
 
-# Pixel Perfect Considered Harmful
+# "Pixel Perfect" Considered Harmful
 
-The QA response came back. My code got kicked back into ready for dev... again.
+The QA response came back. My code got kicked back into the "developing" swimlane... again.
 This time the space between the list of cards was greater than the 12px shown in the Figma mock up.
 
 Never mind that the Figma viewport was sized to a tablet and the QA team uses their laptop screens. The devs mostly work on double wide monitors and our customers typically visit on mobile anyways.

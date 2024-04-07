@@ -4,7 +4,7 @@ const CONFIG = {
   name: 'Make 🏗️ Devs',
 
   origin: 'https://wjv.io',
-  basePathname: '/blog', // '/blog'
+  basePathname: '/blog',
   trailingSlash: false,
 
   title: 'Astro Blog',
@@ -34,7 +34,7 @@ const CONFIG = {
     },
 
     list: {
-      pathname: 'blog', // Blog main path, you can change this to "articles" (/articles)
+      pathname: 'posts', // list posts path (blog/posts)
       noindex: false,
       disabled: false,
     },
