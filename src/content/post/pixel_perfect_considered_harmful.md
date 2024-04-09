@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-04-08T18:55:18.322Z
-title: Pixel Perfect Considered Harmful
+title: '"Pixel Perfect" Considered Harmful'
 description: Embracing the variability of content & devices yields websites that bend but don't break under the strain of user, content & device diversity.
 excerpt: Embracing the variability of content & devices yields websites that bend but don't break under the strain of user, content & device diversity.
 image: /images/not_pixel_perfect.webp
