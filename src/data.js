@@ -62,14 +62,13 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
+    { text: 'Made with:', href: 'https://astro.build/' },
+    { ariaLabel: 'Astro', icon: 'astro', href: 'https://astro.build/' },
+    { ariaLabel: 'SolidJS', icon: 'solidjs', href: 'https://www.solidjs.com/' },
+  ],
+  socialLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    
   ],
-  // socialLinks: [
-    // { ariaLabel: 'Twitter', icon: 'brand-twitter', href: '#' },
-    // { ariaLabel: 'Instagram', icon: 'brand-instagram', href: '#' },
-    // { ariaLabel: 'Facebook', icon: 'brand-facebook', href: '#' },
-    // { ariaLabel: 'RSS', icon: 'rss', href: getAsset('/rss') },
-    // { ariaLabel: 'Github', icon: 'brand-github', href: 'https://github.com/JamieVaughn' },
-  // ],
 };

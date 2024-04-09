@@ -20,7 +20,7 @@ const meta = {
   <Hero
     callToAction={{
       text: "Featured Post",
-      href: "/blog/nullish_checking_js#featured",
+      href: "/blog/use_effect#featured",
     }}
     callToAction2={{
       text: "All Posts →",
@@ -49,9 +49,9 @@ const meta = {
   <!-- Features Widget ************** -->
 
   <Features
+    highlight="Topics"
     title="Covered Here"
     subtitle="Sharing observations about the web platform"
-    highlight="Topics"
     items={[
       {
         title: "HTML",
@@ -90,22 +90,7 @@ const meta = {
 
   <LatestPosts
     title="Find more posts!"
-    information={`The archive of all authored posts is available below`}
-    postIds={[
-      "arity_polymorphism.md",
-      "chained_css.md",
-      "good_parts_crockford.md",
-      "good_parts_simpson.md",
-      "immutability.md",
-      "lists.md",
-      "lookup_tables.md",
-      "mixblend_mode.mdx",
-      "nothing_is_something.md",
-      "null_object_fp.md",
-      "nullish_checking_js.md",
-      "state_reducers.md",
-      "use_effect.md",
-      "uuids.mdx",
-    ]}
+    allPostsText="The archive of all authored posts is available here"
+    information={"Observations & lessons about the web platform."}
   />
 </Layout>

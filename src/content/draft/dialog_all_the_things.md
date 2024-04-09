@@ -29,5 +29,3 @@ canonical: https://wjv.io/blog/dialog_all_the_things
 - command pallete (app-wide search)
 - floating filter bar
 
-
-## The :has() selector as a state reducer for styles

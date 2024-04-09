@@ -1,6 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
+import PostTags from "~/components/blog/Tags.astro";
+import { fetchPosts } from '~/utils/blog';
 
+const posts = await fetchPosts();
+const tags = Array.from(
+  new Set(posts.flatMap(post => post?.tags ?? ''))
+)
+.filter(Boolean)
+.sort((a, b) => a.localeCompare(b))
 interface Item {
   title?: string;
   description?: string;
@@ -46,6 +54,7 @@ const {
                 set:html={title}
               />
             )}
+            <PostTags tags={tags} class="inline-block mb-16"/>
 
             {subtitle && (
               <p

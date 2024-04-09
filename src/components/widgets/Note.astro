@@ -1,5 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
+import { fetchPosts } from "~/utils/blog";
+import { getPermalink } from "~/utils/permalinks";
+
+const posts = await fetchPosts();
+const categories: string[] = Array.from(
+  new Set(posts.map((post) => post.category ?? ""))
+)
+  .filter(Boolean)
+  .sort((a, b) => a.localeCompare(b));
 ---
 
 <section class="bg-blue-50 dark:bg-slate-800">
@@ -9,6 +18,28 @@ import { Icon } from "astro-icon/components";
     <span class="font-bold">
       <Icon name="info-square" class="w-5 h-5 inline-block align-text-bottom" />
     </span>
-    About Make 🏗️ Devs:
+    Make 🏗️ Devs is a web developer blog that publishes:
+  </div>
+  <div style="text-align: center;">
+    <Icon name="label" class="inline-block -mt-0.5" />
+    {
+      categories.map((category) => (
+        <>
+          <a
+            class="capitalize hover:underline"
+            href={getPermalink(category, "category")}
+          >
+            {category.replaceAll("-", " ")}
+          </a>
+          <span class="separator-dot">·</span>
+        </>
+      ))
+    }
   </div>
 </section>
+
+<style>
+  .separator-dot:last-of-type {
+    display: none;
+  }
+</style>

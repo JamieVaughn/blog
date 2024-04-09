@@ -14,4 +14,3 @@ canonical: https://wjv.io/blog/classless_css
 
 # Classless CSS
 
-## The :has() selector as a state reducer for styles
