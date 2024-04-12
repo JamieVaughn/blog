@@ -12,3 +12,13 @@ tags:
   - Redux
 canonical: https://wjv.io/blog/custom_event_reducer
 ---
+
+
+```js
+ function create_custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
+	return new CustomEvent(type, { detail, bubbles, cancelable });
+}
+
+node.addEventListener(type: eventString, listener, options: {capture = false, once = false, passive = false, signal: AbortSignal})
+// listener can be null, object with handleEvent method: {handleEvent(): ...}, or a function
+```
