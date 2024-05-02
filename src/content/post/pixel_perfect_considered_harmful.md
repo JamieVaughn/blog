@@ -1,8 +1,8 @@
 ---
 publishDate: 2024-04-08T18:55:18.322Z
 title: '"Pixel Perfect" Considered Harmful'
-description: Embracing the variability of content & devices yields websites that bend but don't break under the strain of user, content & device diversity.
-excerpt: Embracing the variability of content & devices yields websites that bend but don't break under the strain of user, content & device diversity.
+description: Embracing fluid over rigid designs yields websites that bend but don't break under the strain of user, content & device diversity.
+excerpt: Embracing fluid over rigid designs yields websites that bend but don't break under the strain of user, content & device diversity.
 image: /images/not_pixel_perfect.webp
 category: Articles
 tags:
@@ -20,7 +20,9 @@ Have you been here? I sure have and it's very 🤦:
 Never mind that the Figma viewport was sized to a tablet and the QA team uses double wide monitors. The devs have laptops and our customers typically visit on mobile anyways.
 The problem with the pixel perfect mentality is that it causes people to think that static design mocks rendered in a single aspect ratio and single viewport dimension can somehow accurately reflect how the app will look for all viewports and aspect ratios for any device out there. And that they MUST look the same on every viewport. Indeed, ensuring a consistent visual experience across different viewports & devices is a different proposition from ensuring the same absolute box model & layout dimensions across different viewports & devices.
 
-However, even the minimum dose of pragmatism yields to that sort of rigid thinking and should allow for a relaxed constraint on the exact manner in which a design stretches and bends to fit into different viewports. Some css styling of course ought to and easily can be the same no matter the viewport, such as `color`, `font-family` & icon choices, `border`, `list-style` and `text-decoration` and several others. In short, styles which are independent of space. But the rigidity around pixel perfection needs to be relaxed for css styles that do change spacing.
+However, even the minimum dose of pragmatism yields to that sort of rigid thinking and should allow for a relaxed constraint on the exact manner in which a design stretches and bends to fit into different viewports. We always should want to <strong>favor fluid designs over rigid thinking</strong>, because the web is fluid due to its diversity and the diversity of the users & devices that browse it.
+
+Some css styling, of course, ought to and easily can be the same no matter the viewport, such as `color`, `font-family` & icon choices, `border`, `list-style` and `text-decoration` and several others. In short, styles which are independent of space. But the rigidity around pixel perfection needs to be relaxed for css styles that do change spacing.
 
 Here's some CSS that should change in proportion to the device viewport: Box model properties like `margin`, `padding` (exception here for common border widths), `font-size` & icon sizes, layout `gap`, the number of columns/rows, `width`/`height` of containers. In short any css styles that effect spacing and layout.
 

@@ -106,3 +106,15 @@ jisp?
 
 declarative relies on expressions while procedural/imperative uses statements
 Declarative code follows the general attitude of `.map()` in that a declaration will cause a transform pipeline to execute which yield a one-to-one result with what's expressed.
+
+## The real problem with for and while loops
+
+They are not data!
+
+As procedural statements they are not values that can be stored in variables
+
+This prevents data driven design and thinking of your program as a flow of data and transformation of data.
+
+In general, an expression is a snippet of code that evaluates to a value. A statement is a snippet of code that performs an action.
+
+Statements, by definition, then cannot be referentially transparent because they do not evaluate to a value. So they cannot be substituted with anything that would represent them. They are only the side effects that they produce.
