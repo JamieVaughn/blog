@@ -29,3 +29,6 @@ canonical: https://wjv.io/blog/dialog_all_the_things
 - command pallete (app-wide search)
 - floating filter bar
 
+# To Modal or Not To Modal
+
+what is a modal precisely? The term modal refers to a "mode" of user interaction, specifically a constrained mode, where the user must complete an interface interaction before proceeding with or exiting to other parts of the application
