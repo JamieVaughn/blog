@@ -3,7 +3,7 @@ publishDate: 2025-02-13T08:30:00.322Z
 title: WASM's Killer App
 description: WASM's Killer App
 excerpt: WASM's Killer App
-image: /images/waterfall_mill.jpg
+image: /images/prism_space.webp
 category: Articles
 draft: true
 tags:
