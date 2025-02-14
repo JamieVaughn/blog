@@ -12,7 +12,9 @@ canonical: https://wjv.io/blog/uuids
 ---
 import Uuid from '~/components/demos/Uuid.astro'
 
-> 2024 Addendum: Since this article was written, the `crypto` API has been standardized and as of July 2022 is available in all modern browsers. The `crypto` API provides a `crypto.randomUUID()` method that can be used to generate UUIDs in the browser and is the recommended way to do so going forward. The method described in this article is still valid and can considered as a fallback for browsers or environments that do not support `crypto.randomUUID()`.
+<article class='banner'>
+  <strong>2024 Addendum:</strong> Browsers now recommend the standardized `crypto` API, with its `randomUUID()` method for generating UUIDs. The technique in this post may serve as a fallback for environments lacking `crypto.randomUUID()`.
+</article>
 
 Sometimes there is a need to generate an id for objects created in the browser. Simply using an index or a number generated from `Math.random()` does not ensure an adequate level of uniqueness. What is really needed is a Universally Unique IDentifier (UUID). A UUID is a special id that garauntees uniqueness across all space and time.
 

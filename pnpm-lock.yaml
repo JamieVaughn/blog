@@ -13,7 +13,7 @@ importers:
         version: 0.5.6(typescript@5.4.2)
       '@astrojs/mdx':
         specifier: ^2.1.1
-        version: 2.1.1(astro@4.4.13)
+        version: 2.1.1(astro@4.4.13(typescript@5.4.2))
       '@astrojs/rss':
         specifier: ^4.0.5
         version: 4.0.5
@@ -25,10 +25,10 @@ importers:
         version: 4.0.1(solid-js@1.8.16)(vite@5.1.5)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.4.13)(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.4.13(typescript@5.4.2))(tailwindcss@3.4.3)
       '@astrolib/seo':
         specifier: 1.0.0-beta.5
-        version: 1.0.0-beta.5(astro@4.4.13)
+        version: 1.0.0-beta.5(astro@4.4.13(typescript@5.4.2))
       '@fontsource/inter':
         specifier: ^5.0.17
         version: 5.0.17
@@ -2677,7 +2677,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@2.1.1(astro@4.4.13)':
+  '@astrojs/mdx@2.1.1(astro@4.4.13(typescript@5.4.2))':
     dependencies:
       '@astrojs/markdown-remark': 4.2.1
       '@mdx-js/mdx': 3.0.1
@@ -2721,7 +2721,7 @@ snapshots:
       - supports-color
       - vite
 
-  '@astrojs/tailwind@5.1.0(astro@4.4.13)(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.4.13(typescript@5.4.2))(tailwindcss@3.4.3)':
     dependencies:
       astro: 4.4.13(typescript@5.4.2)
       autoprefixer: 10.4.18(postcss@8.4.35)
@@ -2743,7 +2743,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrolib/seo@1.0.0-beta.5(astro@4.4.13)':
+  '@astrolib/seo@1.0.0-beta.5(astro@4.4.13(typescript@5.4.2))':
     dependencies:
       astro: 4.4.13(typescript@5.4.2)
 
@@ -4982,8 +4982,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.35):
     dependencies:
       lilconfig: 3.1.1
-      postcss: 8.4.35
       yaml: 2.4.1
+    optionalDependencies:
+      postcss: 8.4.35
 
   postcss-nested@6.0.1(postcss@8.4.35):
     dependencies:
@@ -5496,7 +5497,7 @@ snapshots:
   ts-interface-checker@0.1.13: {}
 
   tsconfck@3.0.2(typescript@5.4.2):
-    dependencies:
+    optionalDependencies:
       typescript: 5.4.2
 
   tunnel-agent@0.6.0:
@@ -5658,39 +5659,42 @@ snapshots:
       fsevents: 2.3.3
 
   vitefu@0.2.5(vite@5.1.5):
-    dependencies:
+    optionalDependencies:
       vite: 5.1.5
 
   volar-service-css@0.0.30(@volar/language-service@2.0.4):
     dependencies:
-      '@volar/language-service': 2.0.4
       vscode-css-languageservice: 6.2.12
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.0.4
 
   volar-service-emmet@0.0.30(@volar/language-service@2.0.4):
     dependencies:
-      '@volar/language-service': 2.0.4
       '@vscode/emmet-helper': 2.9.2
       volar-service-html: 0.0.30(@volar/language-service@2.0.4)
+    optionalDependencies:
+      '@volar/language-service': 2.0.4
 
   volar-service-html@0.0.30(@volar/language-service@2.0.4):
     dependencies:
-      '@volar/language-service': 2.0.4
       vscode-html-languageservice: 5.1.2
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.0.4
 
   volar-service-prettier@0.0.30(@volar/language-service@2.0.4):
     dependencies:
-      '@volar/language-service': 2.0.4
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.0.4
 
   volar-service-typescript-twoslash-queries@0.0.30(@volar/language-service@2.0.4):
-    dependencies:
+    optionalDependencies:
       '@volar/language-service': 2.0.4
 
   volar-service-typescript@0.0.30(@volar/language-service@2.0.4)(@volar/typescript@2.0.4):
     dependencies:
-      '@volar/language-service': 2.0.4
       '@volar/typescript': 2.0.4
       path-browserify: 1.0.1
       semver: 7.6.0
@@ -5698,6 +5702,8 @@ snapshots:
       vscode-languageserver-textdocument: 1.0.11
       vscode-nls: 5.2.0
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.0.4
 
   vscode-css-languageservice@6.2.12:
     dependencies:

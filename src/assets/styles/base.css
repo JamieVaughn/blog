@@ -76,3 +76,31 @@ p > code {
 p > code::before, p > code::after {
   content: '' !important;
 }
+
+article.banner {
+  border-radius: 0.25rem;
+  border-left: 4px solid hsl(240 3.7% 44%);
+  padding: 1.5rem;
+  padding-left: 2.5rem;
+  background-color: hsl(203.4 70.4% 28%);
+  border-left-color: hsl(198.7 97.9% 57.2%);;
+  color: hsl(198.8 100% 82.5%);
+  position: relative;
+}
+article.banner::before {
+  content: 'i';
+  font-style: italic;
+  background-color: hsl(198.7 97.9% 57.2%);
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  left: calc(-0.8rem - 2px);
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: hsl(240, 5.9%, 11%);
+  clip-path: circle(50% at 50% 50%);
+}
