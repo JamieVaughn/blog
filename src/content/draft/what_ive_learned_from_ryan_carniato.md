@@ -27,3 +27,5 @@ canonical: https://wjv.io/blog/template
 - Streaming
 - Global state management (on client or on server)
 - Eliminating waterfall is priority
+- Projections, Derivables, Computables, Signals
+- Fine grained vs Coarse Grained
